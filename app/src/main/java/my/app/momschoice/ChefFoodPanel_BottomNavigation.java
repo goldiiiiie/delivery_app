@@ -11,9 +11,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import my.app.momschoice.chefFoodPanel.ChefHomeFragment;
 import my.app.momschoice.chefFoodPanel.ChefOrderFragment;
-import my.app.momschoice.chefFoodPanel.ChefPendingOrderFragment;
+import my.app.momschoice.chefFoodPanel.ChefPendingOrdersFragment;
 import my.app.momschoice.chefFoodPanel.ChefProfileFragment;
-import androidx.fragment.app.Fragment;
 
 
 public class ChefFoodPanel_BottomNavigation extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
@@ -27,7 +26,7 @@ public class ChefFoodPanel_BottomNavigation extends AppCompatActivity implements
         String name=getIntent().getStringExtra("PAGE");
         if(name!=null){
             if(name.equalsIgnoreCase("OrderPage")){
-                loadcheffragment(new ChefPendingOrderFragment());
+                loadcheffragment(new ChefPendingOrdersFragment());
             }else if (name.equalsIgnoreCase("ConfirmPage")){
                 loadcheffragment(new ChefOrderFragment());
             }else if (name.equalsIgnoreCase("AcceptOrderpage")){
@@ -67,7 +66,7 @@ public class ChefFoodPanel_BottomNavigation extends AppCompatActivity implements
                 fragment=new ChefHomeFragment();
                 break;
             case R.id.PendingOrders:
-                fragment=new ChefPendingOrderFragment();
+                fragment=new ChefPendingOrdersFragment();
                 break;
             case R.id.Orders:
                 fragment=new ChefOrderFragment();

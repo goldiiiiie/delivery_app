@@ -67,6 +67,9 @@ dependencies {
     implementation ("androidx.legacy:legacy-support-v4:1.0.0")
 
     implementation("com.google.android.material:material:1.12.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.6.1")
+    implementation("com.firebaseui:firebase-ui-database:6.2.1")
+//    implementation ("com.cepheuen.elegant-number-button:lib:1.0.2")
 
 
 

@@ -9,9 +9,6 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import io.reactivex.annotations.NonNull;
-import my.app.momschoice.chefFoodPanel.ChefHomeFragment;
-import my.app.momschoice.chefFoodPanel.ChefOrderFragment;
-import my.app.momschoice.chefFoodPanel.ChefPendingOrderFragment;
 import my.app.momschoice.deliveryFoodPanel.DeliveryPendingOrderFragment;
 import my.app.momschoice.deliveryFoodPanel.DeliveryShipOrderFragment;
 

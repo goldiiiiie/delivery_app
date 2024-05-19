@@ -13,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import io.reactivex.annotations.NonNull;
 import my.app.momschoice.customerFoodPanel.CustomerCartFragment;
 import my.app.momschoice.customerFoodPanel.CustomerHomeFragment;
-import my.app.momschoice.customerFoodPanel.CustomerOrdersFragment;
+import my.app.momschoice.customerFoodPanel.CustomerOrderFragment;
 import my.app.momschoice.customerFoodPanel.CustomerProfileFragment;
 import my.app.momschoice.customerFoodPanel.CustomerTrackFragment;
 import my.app.momschoice.deliveryFoodPanel.DeliveryPendingOrderFragment;
@@ -58,7 +58,7 @@ public class CustomerFoodPanel_BottomNavigation extends AppCompatActivity implem
             fragment=new CustomerProfileFragment();
         }
         else if (itemId == R.id.Cust_order){
-            fragment=new CustomerOrdersFragment();
+            fragment=new CustomerOrderFragment();
         }
         else if (itemId == R.id.track){
             fragment=new CustomerTrackFragment();

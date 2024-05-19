@@ -11,22 +11,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import io.reactivex.annotations.NonNull;
 import my.app.momschoice.R;
-import my.app.momschoice.UpdateDishModel;
+import my.app.momschoice.chefFoodPanel.UpdateDishModel;
 
 public class CustomerHomeAdapter extends RecyclerView.Adapter<CustomerHomeAdapter.ViewHolder>{
     private Context mcontext;
-    private List<UpdateDishModel> updateDishModellist;
+    private ArrayList<UpdateDishModel> updateDishModellist;
     DatabaseReference databaseReference;
+    private OnItemClickListener mListener;
 
-    public CustomerHomeAdapter(Context context , List<UpdateDishModel>updateDishModelslist){
+
+
+    public interface OnItemClickListener {
+        void onItemClick(UpdateDishModel updateDishModel);
+    }
+
+    public CustomerHomeAdapter(Context context , ArrayList<UpdateDishModel> updateDishModelslist, OnItemClickListener listener){
 
         this.updateDishModellist = updateDishModelslist;
         this.mcontext = context;
+        this.mListener = listener;
     }
 
     @NonNull
@@ -39,12 +48,19 @@ public class CustomerHomeAdapter extends RecyclerView.Adapter<CustomerHomeAdapte
     @Override
     public void onBindViewHolder(@NonNull CustomerHomeAdapter.ViewHolder holder, int position) {
 
-        final UpdateDishModel updateDishModel = updateDishModellist.get(position);
+        final my.app.momschoice.chefFoodPanel.UpdateDishModel updateDishModel = updateDishModellist.get(position);
         Glide.with(mcontext).load(updateDishModel.getImageURL()).into(holder.imageView);
-        holder.Dishname.setText(updateDishModel.getPrice());
+        holder.Dishname.setText(updateDishModel.getDishes());
         updateDishModel.getRandomUID();
         updateDishModel.getChefId();
         holder.Price.setText("Price:"+updateDishModel.getPrice()+"DHs");
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mListener.onItemClick(updateDishModel);
+            }
+        });
 
     }
 

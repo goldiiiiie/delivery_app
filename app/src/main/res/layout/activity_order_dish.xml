@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".customerFoodPanel.OrderDish">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,17 +17,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:scaleType="centerCrop" />
 
-
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 app:cardElevation="5dp"
                 app:cardUseCompatPadding="true">
 
@@ -38,7 +35,6 @@
                     android:layout_marginTop="20sp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
-
 
                     <TextView
                         android:id="@+id/food_name"
@@ -53,20 +49,19 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="right">
+                        android:gravity="end"
+                        android:layout_marginRight="15dp">
 
-<!--                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
                         <NumberPicker
                             android:id="@+id/numberbtn"
-                            android:layout_width="75dp"
-                            android:layout_height="25dp"
-                            android:layout_gravity="bottom"
-                            android:layout_marginRight="15dp"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp" />
 
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -140,9 +135,7 @@
                         android:textColor="@color/Black"
                         android:textSize="17dp" />
 
-
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -150,4 +143,3 @@
 
     </ScrollView>
 </LinearLayout>
-

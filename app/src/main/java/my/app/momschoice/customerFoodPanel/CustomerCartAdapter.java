@@ -43,9 +43,9 @@ public class CustomerCartAdapter extends RecyclerView.Adapter<CustomerCartAdapte
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         final Cart cart = cartModellist.get(position);
         holder.dishname.setText(cart.getDishName());
-        holder.PriceRs.setText("Price: ₹ " + cart.getPrice());
+        holder.PriceRs.setText("Price: Dhs " + cart.getPrice());
         holder.Qty.setText("× " + cart.getDishQuantity());
-        holder.Totalrs.setText("Total: ₹ " + cart.getTotalprice());
+        holder.Totalrs.setText("Total: Dhs " + cart.getTotalprice());
         total += Integer.parseInt(cart.getTotalprice());
         holder.elegantNumberButton.setValue(Integer.parseInt(cart.getDishQuantity()));
         final int dishprice = Integer.parseInt(cart.getPrice());

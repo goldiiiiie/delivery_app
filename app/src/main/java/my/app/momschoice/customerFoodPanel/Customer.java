@@ -1,7 +1,7 @@
 package my.app.momschoice.customerFoodPanel;
 
 public class Customer {
-    private String FirstName,LastName,Password,ConfirmPassword,EmailId,MobileNo,State,Area,LocalAddress;
+    private String FirstName,LastName,Password,ConfirmPassword,EmailId,MobileNo,State,Area,LocalAddress,PinCode;
 
     public Customer(){
     }

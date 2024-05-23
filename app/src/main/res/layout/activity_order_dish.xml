@@ -57,13 +57,12 @@
 
 <!--                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
                         <NumberPicker
-                            android:id="@+id/number_btn"
+                            android:id="@+id/numberbtn"
                             android:layout_width="75dp"
                             android:layout_height="25dp"
                             android:layout_gravity="bottom"
-                            android:layout_marginRight="15dp">
+                            android:layout_marginRight="15dp"/>
 
-                        </NumberPicker>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

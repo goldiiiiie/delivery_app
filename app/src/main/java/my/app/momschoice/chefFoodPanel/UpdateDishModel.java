@@ -2,7 +2,7 @@ package my.app.momschoice.chefFoodPanel;
 
 public class UpdateDishModel {
 
-    String Dishes,RandomUID,Description,Quantity,Price,ImageURL,ChefId;
+    String Dishes,RandomUID,Description,Quantity,Price,ImageURL,Chefid;
 
 
     public UpdateDishModel()
@@ -62,11 +62,12 @@ public class UpdateDishModel {
         Dishes = dishes;
     }
 
-    public String getChefId() {
-        return ChefId;
+    public String getChefid() {
+        return Chefid;
     }
 
-    public void setChefId(String chefId) {
-        ChefId = chefId;
+    public void setChefid(String chefid) {
+        Chefid = chefid;
     }
 }
+

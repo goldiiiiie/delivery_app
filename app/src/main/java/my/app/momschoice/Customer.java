@@ -1,15 +1,15 @@
 package my.app.momschoice;
 
 public class Customer {
-    private String City,ConfirmPassword,EmailID,FirstName,LastName,Mobileno,Password,State,Suburban,LocalAddress;
+    private String ConfirmPassword,EmailID,FirstName,LastName,Mobileno,Password,State,Localaddress;
 
     public Customer() {
 
 
     }
 
-    public Customer(String City, String confirmPassword, String emailID, String firstName,String lastName, String mobileno, String password, String state, String suburban,String localAddress) {
-        this.City = City;
+    public Customer(String confirmPassword, String emailID, String firstName,String lastName, String mobileno, String password, String state, String suburban,String localaddress) {
+
         ConfirmPassword=confirmPassword;
         EmailID = emailID;
         FirstName=firstName;
@@ -17,17 +17,10 @@ public class Customer {
         Mobileno = mobileno;
         Password = password;
         State = state;
-        Suburban = suburban;
-        LocalAddress=localAddress;
+        Localaddress=localaddress;
     }
 
-    public String getCity() {
-        return City;
-    }
 
-    public void setCity(String city) {
-        City = city;
-    }
 
     public String getConfirmPassword() {
         return ConfirmPassword;
@@ -85,19 +78,12 @@ public class Customer {
         State = state;
     }
 
-    public String getSuburban() {
-        return Suburban;
+    public String getLocaladdress() {
+        return Localaddress;
     }
 
-    public void setSuburban(String suburban) {
-        Suburban = suburban;
+    public void setLocaladdress(String localaddress) {
+        Localaddress = localaddress;
     }
 
-    public String getLocalAddress() {
-        return LocalAddress;
-    }
-
-    public void setLocalAddress(String localAddress) {
-        LocalAddress = localAddress;
-    }
 }

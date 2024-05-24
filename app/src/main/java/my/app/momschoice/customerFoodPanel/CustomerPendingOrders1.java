@@ -2,14 +2,15 @@ package my.app.momschoice.customerFoodPanel;
 
 public class CustomerPendingOrders1 {
 
-    private String Address,GrandTotalPrice,MobileNumber,Name,Note;
+    private String Address,GrandTotalPrice,MobileNumber,Note,Name;
 
     public CustomerPendingOrders1(String address, String grandTotalPrice, String mobileNumber, String name,String note) {
         Address = address;
         GrandTotalPrice = grandTotalPrice;
         MobileNumber = mobileNumber;
-        Name = name;
         Note=note;
+        Name=name;
+
 
     }
 

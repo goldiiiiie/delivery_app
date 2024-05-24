@@ -96,9 +96,9 @@ public class ChefPendingOrdersAdapter extends RecyclerView.Adapter<ChefPendingOr
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             final ChefPendingOrders chefPendingOrders = snapshot.getValue(ChefPendingOrders.class);
                             HashMap<String, String> hashMap = new HashMap<>();
-                            String chefid = chefPendingOrders.getChefId();
+                            String chefid = chefPendingOrders.getChefid();
                             String dishid = chefPendingOrders.getDishId();
-                            hashMap.put("ChefId", chefPendingOrders.getChefId());
+                            hashMap.put("ChefId", chefPendingOrders.getChefid());
                             hashMap.put("DishId", chefPendingOrders.getDishId());
                             hashMap.put("DishName", chefPendingOrders.getDishName());
                             hashMap.put("DishPrice", chefPendingOrders.getPrice());
@@ -134,7 +134,7 @@ public class ChefPendingOrdersAdapter extends RecyclerView.Adapter<ChefPendingOr
                                                     HashMap<String, String> hashMap2 = new HashMap<>();
                                                     userid = chefPendingOrders.getUserId();
                                                     dishid = chefPendingOrders.getDishId();
-                                                    hashMap2.put("ChefId", chefPendingOrders.getChefId());
+                                                    hashMap2.put("ChefId", chefPendingOrders.getChefid());
                                                     hashMap2.put("DishId", chefPendingOrders.getDishId());
                                                     hashMap2.put("DishName", chefPendingOrders.getDishName());
                                                     hashMap2.put("DishPrice", chefPendingOrders.getPrice());

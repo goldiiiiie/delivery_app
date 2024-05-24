@@ -84,7 +84,7 @@ public class CustomerProfileFragment extends Fragment {
 
                                                                  firstname.setText(customer.getFirstName());
                                                                  lastname.setText(customer.getLastName());
-                                                                 address.setText(customer.getLocalAddress());
+                                                                 address.setText(customer.getLocaladdress());
                                                                  mobileno.setText(customer.getMobileno());
                                                                  Email.setText(customer.getEmailID());
                                                                  State.setSelection(getIndexByString(State, customer.getState()));

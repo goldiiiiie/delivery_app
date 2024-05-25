@@ -93,4 +93,12 @@ public class Customer {
     public void setLocaladdress(String localaddress) {
         Localaddress = localaddress;
     }
+
+    public String getPinCode() {
+        return PinCode;
+    }
+
+    public void setPinCode(String pinCode) {
+        PinCode = pinCode;
+    }
 }

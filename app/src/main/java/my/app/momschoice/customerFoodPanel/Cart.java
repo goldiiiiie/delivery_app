@@ -1,10 +1,10 @@
 package my.app.momschoice.customerFoodPanel;
 
 public class Cart {
-    private String Chefid,DishID,DishName,DishQuantity,Price,Totalprice;
+    private String ChefId,DishID,DishName,DishQuantity,Price,Totalprice;
 
-    public Cart(String chefid, String dishID, String dishName, String dishQuantity, String price, String totalprice) {
-        Chefid = chefid;
+    public Cart(String chefId, String dishID, String dishName, String dishQuantity, String price, String totalprice) {
+        ChefId = chefId;
         DishID = dishID;
         DishName = dishName;
         DishQuantity = dishQuantity;
@@ -16,11 +16,11 @@ public class Cart {
     }
 
     public String getChefId() {
-        return Chefid;
+        return ChefId;
     }
 
     public void setChefId(String chefId) {
-        Chefid = chefId;
+        ChefId = chefId;
     }
 
     public String getDishID() {

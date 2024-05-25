@@ -20,7 +20,7 @@ public class ChefPendingOrders {
 
     }
 
-    public String getChefid() {
+    public String getChefId() {
         return Chefid;
     }
 

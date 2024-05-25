@@ -1,7 +1,7 @@
 package my.app.momschoice.chefFoodPanel;
 
 public class Chef {
-    private String Area, ConfirmPassword, Emailid, Fname, House, Lname, Mobile, Password, Postcode, State;
+    private String Area, ConfirmPassword, Emailid, Fname, House, Lname, Mobile, Password, Postcode, State,Pincode;
 
     // Press Alt+Insert
 
@@ -62,5 +62,45 @@ public class Chef {
 
     public String getState() {
         return State;
+    }
+
+    public void setArea(String area) {
+        Area = area;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        ConfirmPassword = confirmPassword;
+    }
+
+    public void setEmailid(String emailid) {
+        Emailid = emailid;
+    }
+
+    public void setFname(String fname) {
+        Fname = fname;
+    }
+
+    public void setHouse(String house) {
+        House = house;
+    }
+
+    public void setLname(String lname) {
+        Lname = lname;
+    }
+
+    public void setMobile(String mobile) {
+        Mobile = mobile;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public void setPostcode(String postcode) {
+        Postcode = postcode;
+    }
+
+    public void setState(String state) {
+        State = state;
     }
 }

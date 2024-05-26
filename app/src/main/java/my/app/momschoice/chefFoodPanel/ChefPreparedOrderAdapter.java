@@ -28,7 +28,7 @@ public class ChefPreparedOrderAdapter extends RecyclerView.Adapter<ChefPreparedO
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.activity_chef_prepared_order, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.chef_preparedorder, parent, false);
         return new ChefPreparedOrderAdapter.ViewHolder(view);
     }
 
@@ -36,7 +36,7 @@ public class ChefPreparedOrderAdapter extends RecyclerView.Adapter<ChefPreparedO
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final ChefFinalOrders1 chefFinalOrders1 = chefFinalOrders1list.get(position);
         holder.Address.setText(chefFinalOrders1.getAddress());
-        holder.grandtotalprice.setText("Grand Total:  " + chefFinalOrders1.getGrandTotalPrice());
+        holder.grandtotalprice.setText("Grand Total: Dhs" + chefFinalOrders1.getGrandTotalPrice());
         final String random = chefFinalOrders1.getRandomUID();
         holder.Vieworder.setOnClickListener(new View.OnClickListener() {
             @Override

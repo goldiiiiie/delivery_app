@@ -26,7 +26,7 @@ public class ChefOrdertobePrepareViewAdapter extends RecyclerView.Adapter<ChefOr
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mcontext).inflate(R.layout.activity_chef_ordertobe_prepare_view, parent, false);
+        View view = LayoutInflater.from(mcontext).inflate(R.layout.chef_ordertobeprepared_view, parent, false);
         return new ChefOrdertobePrepareViewAdapter.ViewHolder(view);
     }
 
@@ -35,9 +35,9 @@ public class ChefOrdertobePrepareViewAdapter extends RecyclerView.Adapter<ChefOr
 
         final ChefWaitingOrders chefWaitingOrders = chefWaitingOrderslist.get(position);
         holder.dishname.setText(chefWaitingOrders.getDishName());
-        holder.price.setText("Price: ₹ " + chefWaitingOrders.getDishPrice());
+        holder.price.setText("Price: Dhs " + chefWaitingOrders.getDishPrice());
         holder.quantity.setText("× " + chefWaitingOrders.getDishQuantity());
-        holder.totalprice.setText("Total: ₹ " + chefWaitingOrders.getTotalPrice());
+        holder.totalprice.setText("Total: Dhs " + chefWaitingOrders.getTotalPrice());
     }
 
     @Override

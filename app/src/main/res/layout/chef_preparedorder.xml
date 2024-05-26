@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginTop="8dp"
-            android:text="Total Price: Rs 500"
+            android:text="Total Price: Dhs 500"
             android:textColor="@color/Gray"
             android:textSize="17dp" />
 

@@ -1,14 +1,14 @@
 package my.app.momschoice.customerFoodPanel;
 
 public class Customer {
-    private String FirstName,LastName,Password,ConfirmPassword,EmailId,MobileNo,State,Area,Localaddress,PinCode;
+    private String FirstName,LastName,Password,ConfirmPassword,EmailId,MobileNo,State,Area,Localaddress,Pincode;
 
     public Customer(){
     }
     // Press Alt+insert
 
 
-    public Customer( String firstName, String lastName, String password, String confirmPassword, String emailId, String mobileNo, String state, String area, String localaddress) {
+    public Customer( String firstName, String lastName, String password, String confirmPassword, String emailId, String mobileNo, String state, String area, String localaddress,String pincode) {
 
         FirstName = firstName;
         LastName = lastName;
@@ -19,6 +19,7 @@ public class Customer {
         State = state;
         Area = area;
         Localaddress = localaddress;
+        Pincode=pincode;
     }
 
 
@@ -94,11 +95,11 @@ public class Customer {
         Localaddress = localaddress;
     }
 
-    public String getPinCode() {
-        return PinCode;
+    public String getPincode() {
+        return Pincode;
     }
 
-    public void setPinCode(String pinCode) {
-        PinCode = pinCode;
+    public void setPincode(String pincode) {
+        Pincode = pincode;
     }
 }

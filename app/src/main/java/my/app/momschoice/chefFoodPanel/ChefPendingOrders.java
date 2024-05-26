@@ -2,10 +2,10 @@ package my.app.momschoice.chefFoodPanel;
 
 public class ChefPendingOrders {
 
-    private String Chefid,DishId,DishName,DishQuantity,Price,RandomUID,TotalPrice,UserId;
+    private String ChefId,DishId,DishName,DishQuantity,Price,RandomUID,TotalPrice,UserId;
 
     public ChefPendingOrders(String chefId, String dishId, String dishName, String dishQuantity, String price,String randomUID, String totalPrice, String userId) {
-        Chefid = chefId;
+        ChefId = chefId;
         DishId = dishId;
         DishName = dishName;
         DishQuantity = dishQuantity;
@@ -21,11 +21,11 @@ public class ChefPendingOrders {
     }
 
     public String getChefId() {
-        return Chefid;
+        return ChefId;
     }
 
     public void setChefId(String chefId) {
-        Chefid = chefId;
+        ChefId = chefId;
     }
 
     public String getDishId() {

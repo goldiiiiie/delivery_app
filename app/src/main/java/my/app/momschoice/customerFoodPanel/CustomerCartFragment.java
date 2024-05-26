@@ -459,7 +459,7 @@ public class CustomerCartFragment extends Fragment {
                                                                         hashMap1.put("Name", customer.getFirstName() + " " + customer.getLastName());
                                                                         hashMap1.put("Note", Addnote);
                                                                         hashMap1.put("RandomUID", RandomUId);
-                                                                        hashMap1.put("UserId", FirebaseAuth.getInstance().getCurrentUser().getUid());
+
                                                                         FirebaseDatabase.getInstance().getReference("CustomerPendingOrders").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(RandomUId).child("OtherInformation").setValue(hashMap1).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void aVoid) {
@@ -484,6 +484,7 @@ public class CustomerCartFragment extends Fragment {
                                                                                                             hashMap2.put("Price", customerPendingOrders.getPrice());
                                                                                                             hashMap2.put("RandomUID", RandomUId);
                                                                                                             hashMap2.put("TotalPrice", customerPendingOrders.getTotalPrice());
+                                                                                                            hashMap2.put("UserId", FirebaseAuth.getInstance().getCurrentUser().getUid());
 
 
                                                                                                             FirebaseDatabase.getInstance().getReference("ChefPendingOrders").child(ChefId).child(RandomUId).child("Dishes").child(d).setValue(hashMap2);

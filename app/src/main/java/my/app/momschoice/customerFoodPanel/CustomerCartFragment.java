@@ -442,6 +442,7 @@ public class CustomerCartFragment extends Fragment {
 //                                                                    hashMap.put("RandomUID", RandomUId);
                                                                     hashMap.put("TotalPrice", cart1.getTotalprice());
 
+
                                                                     ChefId = cart1.getChefId();
                                                                     FirebaseDatabase.getInstance().getReference("CustomerPendingOrders").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(RandomUId).child("Dishes").child(DishId).setValue(hashMap);
                                                                 }
@@ -458,6 +459,7 @@ public class CustomerCartFragment extends Fragment {
                                                                         hashMap1.put("Name", customer.getFirstName() + " " + customer.getLastName());
                                                                         hashMap1.put("Note", Addnote);
                                                                         hashMap1.put("RandomUID", RandomUId);
+                                                                        hashMap1.put("UserId", FirebaseAuth.getInstance().getCurrentUser().getUid());
                                                                         FirebaseDatabase.getInstance().getReference("CustomerPendingOrders").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child(RandomUId).child("OtherInformation").setValue(hashMap1).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void aVoid) {

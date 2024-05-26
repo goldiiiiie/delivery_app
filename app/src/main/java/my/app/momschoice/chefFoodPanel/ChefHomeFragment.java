@@ -55,7 +55,7 @@ public class ChefHomeFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Chef cheff = snapshot.getValue(Chef.class);
-                assert cheff != null;
+//                assert cheff != null;
                 State = cheff.getState();
                 Area = cheff.getArea();
                 chefDishes();

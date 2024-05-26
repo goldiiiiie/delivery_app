@@ -28,7 +28,7 @@ public class ChefOrderDishesAdapter extends RecyclerView.Adapter<ChefOrderDishes
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mcontext).inflate(R.layout.activity_chef_order_dishes, parent, false);
+        View view = LayoutInflater.from(mcontext).inflate(R.layout.chef_order_dishes, parent, false);
         return new ChefOrderDishesAdapter.ViewHolder(view);
     }
 
@@ -56,10 +56,11 @@ public class ChefOrderDishesAdapter extends RecyclerView.Adapter<ChefOrderDishes
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            dishname = itemView.findViewById(R.id.Cdishname);
-            price = itemView.findViewById(R.id.Cdishprice);
-            totalprice = itemView.findViewById(R.id.Ctotalprice);
-            quantity = itemView.findViewById(R.id.Cdishqty);
+            dishname = itemView.findViewById(R.id.DN);
+            price = itemView.findViewById(R.id.PR);
+            totalprice = itemView.findViewById(R.id.TR);
+            quantity = itemView.findViewById(R.id.QY);
         }
+
     }
 }
